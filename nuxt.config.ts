@@ -9,7 +9,8 @@ export default defineNuxtConfig({
         '@nuxt/content',
         '@nuxtjs/tailwindcss',
         '@nuxt/icon',
-        '@nuxtjs/color-mode'
+        '@nuxtjs/color-mode',
+        '@nuxthq/studio'
     ],
     colorMode: {
         classSuffix: '',
@@ -18,5 +19,19 @@ export default defineNuxtConfig({
     },
     content: {
         // Content 3 configuration
+    },
+    studio: {
+        repository: {
+            provider: 'github',
+            owner: 'catalino-dev',
+            repo: 'catalino-dev',
+            branch: 'main',
+        }
+    },
+    nitro: {
+        prerender: {
+            routes: ['/'],
+            crawlLinks: true
+        }
     }
 })
