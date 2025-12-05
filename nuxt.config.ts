@@ -7,7 +7,6 @@ export default defineNuxtConfig({
     devtools: { enabled: true },
     modules: [
         '@nuxt/content',
-        '@nuxthq/studio',
         '@nuxtjs/tailwindcss',
         '@nuxt/icon',
         '@nuxtjs/color-mode'
